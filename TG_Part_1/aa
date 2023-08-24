@@ -1,0 +1,13 @@
+O código acima é um programa em linguagem C que recebe dois argumentos na linha de comando: o nome de um ficheiro binário e um ficheiro com uma string. O programa lê o conteúdo do ficheiro binário, substitui os espaços por sequências de letras aleatórias e escreve o resultado em um novo ficheiro. Em seguida, o programa lê a nova string, a divide em substrings separadas por espaços e imprime as instruções para desencriptar a string original.
+
+O programa começa com a definição de algumas constantes e a declaração de algumas funções. A função writeRandomLettersToFile gera uma sequência de letras aleatórias e as escreve em um ficheiro. A função print_instructions recebe duas strings e imprime as instruções necessárias para descriptografar a segunda string a partir da primeira.
+
+Em seguida, a função principal main é definida. Ela começa verificando se o número correto de argumentos foi passado na linha de comando. Caso isso não aconteça, o programa exibe uma mensagem de erro o programa termina. Em seguida, o programa abre o ficheiro binário para leitura e o ficheiro de saída para escrita. Sempre que não for possível abrir um dos ficheiros, uma mensagem de erro é exibida.
+
+Se passar pela parte das verificações do programa, lê o conteúdo do ficheiro binário em blocos de tamanho definido pela constante BUFFER_SIZE. A cada bloco lido, o programa chama a função writeRandomLettersToFile para gerar uma sequência aleatória de letras e escrevê-las no ficheiro de output. Em seguida, o programa percorre o bloco lido caracter por caracter. Se o caracter for um espaço em branco, o programa chama novamente a função writeRandomLettersToFile para criar outra sequência aleatória de letras e escrevê-las no ficheiro de saída. Se o caracter não for um espaço em branco, ele escreve no ficheiro de saída. Finalmente, após processar todo o bloco, o programa chama novamente a função writeRandomLettersToFile para gerar uma sequência aleatória de letras.
+
+Após processar todo o ficheiro binário, o programa verifica se ocorreu algum erro na leitura. Se sim, devolve uma mensagem de erro. Se não, o programa move o indicador de posição para o início dos ficheiros de entrada e saída e continua a execução.
+
+Em seguida, o programa abre novamente o ficheiro de saída e lê o conteúdo no buffer. O programa então divide a nova string em substrings separadas por espaços usando a função strtok e para cada substring, chama a função print_instructions para imprimir as instruções necessárias para desencriptar a substring original. Finalmente, o programa imprime a instrução s 0 indicando o final da encriptação
+
+O programa termina após fechar todos os ficheiros abertos.
