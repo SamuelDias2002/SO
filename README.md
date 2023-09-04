@@ -1,5 +1,5 @@
 # SO
-Operative Systems 
+Operative Systems - Computer Science and engineering at UBI
 
 This repository has:
 - Everything that was done during classes
