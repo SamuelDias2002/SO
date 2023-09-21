@@ -1,4 +1,4 @@
-# SO
+# Operative Systems
 Operative Systems - Computer Science and engineering at UBI
 
 This repository has:
